@@ -1,7 +1,7 @@
 # Flutter TIMES 
 
-A News app which show top news of different categories.
-This app also read news description for you.
+A News app which shows Top News of different categories.
+This app also reads news description for you.
 
 Made using NEWSAPI.ORG and Flutter Text To Speech package.
 
