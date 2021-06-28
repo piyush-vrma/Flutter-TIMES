@@ -11,7 +11,7 @@ class News {
     String url =
         'http://newsapi.org/v2/top-headlines?country=in&apiKey=88bf6dd05bab49ad83f3c67badd5c3f7';
 
-    var response = await http.get(url);
+    var response = await http.get(Uri.parse(url));
     var jsonData = jsonDecode(response.body);
 
     if (jsonData['status'] == 'ok') {
@@ -41,7 +41,7 @@ class CategoryNewsClass {
     String url =
         'http://newsapi.org/v2/top-headlines?country=in&category=$category&apiKey=88bf6dd05bab49ad83f3c67badd5c3f7';
 
-    var response = await http.get(url);
+    var response = await http.get(Uri.parse(url));
     var jsonData = jsonDecode(response.body);
 
     if (jsonData['status'] == 'ok') {
